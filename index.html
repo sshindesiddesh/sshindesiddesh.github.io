@@ -19,6 +19,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -52,7 +53,7 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -72,10 +73,18 @@
 +1(631)820-5510<br>
             <a href="mailto:sshindesiddesh@gmail.com">sshindesiddesh@gmail.com</a>
           </div>
-          <p class="mb-10">
+          <p><h3>About me</h3></p>
+          <p class="mb-0">
 I am a technology enthusiast who likes to use technology for social well-being.<br>
 Following technology trends and expressing my views over it is my everyday activity. <br>
-I love challenges before me. I keep trying new things and experimenting in different areas.<br><br>
+I love challenges before me. I keep trying new things and experimenting in different areas.
+<br><br>
+Apart from being a software developer, I enjoy most of my time being outdoors. <br>
+I enjoy hiking, travelling and listening to music.
+<br><br>
+When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows.<br>
+I spend a large amount of my free time exploring the latest technolgy advancements in the world.</p>
+          <p><br><br><br></p>
        <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://facebook.com/sshindesiddesh/" target="_blank">
@@ -195,7 +204,8 @@ Analysed and improved the performance of Optical Flow (Gunnar-Farneback algorith
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Pune Institute of Computer Technology</h3>
-              <div class="subheading mb-3">Bachelor in ECE</div>
+              <div class="subheading mb-3">Bachelor of Engineering</div>
+              <div>ECE</div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2011 - May 2015</span>
@@ -205,73 +215,171 @@ Analysed and improved the performance of Optical Flow (Gunnar-Farneback algorith
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">SBUnix - Design and Implementation of 64 bit kernel </h3>
+<p>
+●
+Developed a preemptive multitasking kernel by designing scheduler, paging, 
+memory allocator(kernel/user), kernel threads, ring-3 user process, etc.<br>
+●
+Implemented system calls copy-on-write fork, execve, waitpid, kill, etc.<br>
+●
+Developed Virtual File System with support for ELF parsing and loading.<br>
+●
+A Shell that supports executing scripts/binaries interactively, launching
+pipes/background processes and allows file lookup by changing directories.
+</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Secure Tunnel - WiFi BLE Bridge to extend BLE devices to the cloud </h3>
+<p>
+● Designed and implemented state machines to tunnel 8 BLE devices over WiFi.<br> 
+● Implemented the HTTPS to GATT packet Request/Response protocol.<br>
+● A stateless design for asynchronous events, parallel requests and real time 
+responses with limited processing & memory resources (512 KB RAM).<br>
+● Added enhanced security with two layer encryption (ChaCha20-Poly1305 & 
+SHA256) and Suspend/Resume capability to save power.<br>
+● ‘Certified by Apple’ for HomeKit. Support for Apple/Google/AWS cloud.<br>
+</p>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Mission ROM - Patching Framework for ROM code </h3>
+<p>
+●
+Framework to reduce the size of RAM by moving stable RAM code to ROM. <br>
+●
+Developed Generic toolchain layer to support multiple toolchains (ARM & Q6) to enable function level patching for the buggy ROM code. <br>
+●
+This reduces system’s memory and power with no performance degradation and will highly reduce cost of mobile platforms. <br>
+
+</p>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Integre - A Custom Portable Platform for Real Time Image Processing </h3>
+<p>
+●
+Developed Embedded Linux-based portable platform for performing onboard Hand Gesture Recognition, Object Detection and Face Recognition.
+<br>
+●
+Yocto Project/Buildroot, Busybox used to create a low footprint Embedded Linux Image with open source software components for computer vision. 
+</p>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">  Pugboard Proxy </h3>
+<p>
+●
+Developed application to create additional layer of security for publicly accessible network services.
+<br>
+●
+Ability to handle multiple clients simultaneously. OpenSSL for encrypting data traffic for all network services.
+</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Clickstream Mining : </h3>
+<p>
+●
+Given a set of page views, will the visitor view another 
+page on the site or will he leave. (Machine Learning - Decision Trees) 
+</p>
+            </div>
+          </div>
+
+<!--
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Design Intern</h3>
+              <div class="subheading mb-3">Shout! Media Productions</div>
+              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2008 - June 2010</span>
+            </div>
+          </div>
+-->
+        </div>
+
+      </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <div class="subheading mb-3">Programming Languages</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+		<i class="devicon-c-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+		<i class="devicon-cplusplus-plain colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+		 <i class="devicon-python-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+		<i class="devicon-java-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
+		<i class="devicon-csharp-plain colored"></i>
             </li>
+
             <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
+		<i class="devicon-javascript-plain colored"></i>
             </li>
           </ul>
 
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div>
-      </section>
+          <div class="subheading mb-3">Tools</div>
+          <ul class="list-inline list-icons">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a software developer, I enjoy most of my time being outdoors. <br>
-I enjoy hiking, travelling and listening to music.<br>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows.<br>
-I spend a large amount of my free time exploring the latest technolgy advancements in the world.</p>
-        </div>
+            <li class="list-inline-item">
+		<i class="devicon-docker-plain colored"></i>
+            </li>
+            <li class="list-inline-item">
+		<i class="devicon-git-plain-wordmark colored"></i>
+            </li>
+            <li class="list-inline-item">
+		<i class="devicon-amazonwebservices-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+		<i class="devicon-gitlab-plain colored"></i>
+            </li>
+            <li class="list-inline-item">
+            </li>
+
+          </ul>
+
+
+
+          <div class="subheading mb-3">Databases/Web Technologies</div>
+          <ul class="list-inline list-icons">
+
+            <li class="list-inline-item">
+		<i class="devicon-mysql-plain-wordmark colored"></i>
+            </li>
+            <li class="list-inline-item">
+		<i class="devicon-mongodb-plain-wordmark colored"></i>
+            </li>
+            <li class="list-inline-item">
+		<i class="devicon-html5-plain-wordmark colored"></i>
+            </li>
+
+
+          </ul>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
@@ -297,8 +405,6 @@ I spend a large amount of my free time exploring the latest technolgy advancemen
           </ul>
         </div>
       </section>
-
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
