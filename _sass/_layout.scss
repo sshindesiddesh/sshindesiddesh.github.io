@@ -173,3 +173,13 @@ body.sticky-bottom-footer {
     }
   }
 }
+
+// Skills section styling
+.skills-list {
+  line-height: 1.6;
+  color: var(--global-text-color);
+
+  // Ensure proper spacing and wrapping for comma-separated skills
+  word-wrap: break-word;
+  hyphens: auto;
+}

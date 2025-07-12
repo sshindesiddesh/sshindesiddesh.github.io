@@ -165,12 +165,16 @@
       ]
     },
     {
-      "name": "Storage Engines",
+      "name": "Cloud & Infrastructure",
       "level": "Expert",
-      "icon": "fa-solid fa-hard-drive",
+      "icon": "fa-solid fa-cloud",
       "keywords": [
-        "RocksDB",
-        "SQLite"
+        "AWS (EC2, S3, SQS, EMR)",
+        "HDFS",
+        "Apache Spark",
+        "Apache Flink",
+        "Apache Airflow",
+        "Data Built Tool (dbt)"
       ]
     },
     {
@@ -187,16 +191,12 @@
       ]
     },
     {
-      "name": "Cloud & Infrastructure",
+      "name": "Storage Engines",
       "level": "Expert",
-      "icon": "fa-solid fa-cloud",
+      "icon": "fa-solid fa-hard-drive",
       "keywords": [
-        "AWS (EC2, S3, SQS, EMR)",
-        "HDFS",
-        "Apache Spark",
-        "Apache Flink",
-        "Apache Airflow",
-        "Data Built Tool (dbt)"
+        "RocksDB",
+        "SQLite"
       ]
     },
     {
