@@ -117,3 +117,59 @@ body.sticky-bottom-footer {
     }
   }
 }
+
+// Education page styling
+.education {
+  .education-section {
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: var(--global-theme-color);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .institution-duration {
+      font-style: italic;
+      color: var(--global-text-color-light);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .degree {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--global-text-color);
+      }
+
+      .degree-location {
+        font-weight: 500;
+        color: var(--global-text-color-light);
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
