@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: A collection of my professional and personal software engineering projects.
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [professional, personal]
 horizontal: false
 ---

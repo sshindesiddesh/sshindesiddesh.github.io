@@ -51,3 +51,69 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+/*****************************************************************************
+* Work Experience
+*****************************************************************************/
+
+.work-experience {
+  .job-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: var(--global-theme-color);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .company-duration {
+      margin-bottom: 1.5rem;
+      color: var(--global-text-color-light);
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    .position {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h3 {
+      color: var(--global-text-color);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-location {
+      color: var(--global-text-color-light);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
