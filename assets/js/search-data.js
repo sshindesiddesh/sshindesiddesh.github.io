@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-experience",
-          title: "Experience",
-          description: "Educational background and professional work experience in distributed systems and software engineering.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/experience/";
-          },
         },{id: "nav-blog",
           title: "blog",
           description: "",
