@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: My Takes on Tech # blog_name will be displayed in your blog page
 blog_description: What I've been thinking about recently - see the world from my lens as I explore systems, algorithms, and engineering challenges.
-permalink: /blog/:year/:title/
+permalink: /blogs/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -244,9 +244,9 @@ jekyll-archives:
   posts:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+      year: "/blogs/:year/"
+      tags: "/blogs/:type/:name/"
+      categories: "/blogs/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
