@@ -39,7 +39,7 @@ When I'm not building systems, you can find me writing about technology on [Medi
 <div class="text-center mt-4">
   <p class="text-muted mb-3">Discover my educational journey and professional experience</p>
   <a href="/experience/" class="btn btn-primary btn-lg discover-btn">
-    <i class="fa-solid fa-magnifying-glass me-4 zoom-icon"></i>My Background
+    <i class="fa-solid fa-magnifying-glass zoom-icon"></i>&nbsp;&nbsp;&nbsp;My Background
   </a>
 </div>
 
@@ -58,6 +58,7 @@ When I'm not building systems, you can find me writing about technology on [Medi
 .zoom-icon {
   transition: all 0.3s ease;
   animation: zoomPulse 2s ease-in-out infinite;
+  margin-right: 12px !important;
 }
 
 .discover-btn:hover .zoom-icon {
