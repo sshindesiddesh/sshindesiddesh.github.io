@@ -4,9 +4,8 @@ layout: default
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
+      {% if page.cv_pdf %}
+        <div class="text-left mb-3">
           <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
@@ -15,14 +14,11 @@ layout: default
             {% endif %}
             target="_blank"
             rel="noopener noreferrer"
-            class="float-right"
+            class="btn btn-outline-primary btn-sm"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            Download Resume <i class="fa-solid fa-file-pdf"></i>
           </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+        </div>
       {% endif %}
     </header>
 
@@ -55,9 +51,8 @@ layout: default
 {% else %}
   <div class="post">
     <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
+      {% if page.cv_pdf %}
+        <div class="text-left mb-3">
           <a
             {% if page.cv_pdf contains '://' %}
               href="{{ page.cv_pdf }}"
@@ -66,14 +61,11 @@ layout: default
             {% endif %}
             target="_blank"
             rel="noopener noreferrer"
-            class="float-right"
+            class="btn btn-outline-primary btn-sm"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            Download Resume <i class="fa-solid fa-file-pdf"></i>
           </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+        </div>
       {% endif %}
     </header>
 
