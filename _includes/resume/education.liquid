@@ -1,55 +1,52 @@
-<div class="card-text font-weight-light">
+<ul class="card-text font-weight-light list-group list-group-flush">
   {% assign education = data[1] | sort: 'startDate' | reverse %}
   {% for content in education %}
-    <div class="mb-3">
-      <div class="d-flex justify-content-between align-items-start">
-        <div class="flex-grow-1">
-          <div class="d-flex justify-content-between align-items-baseline mb-1">
-            <h6 class="font-weight-bold mb-0">{{ content.studyType }} in {{ content.area }}, {{ content.institution }}</h6>
-            {% if content.startDate and content.startDate != '' %}
-              {% assign startMonth = content.startDate | split: '-' | slice: 1 | first %}
-              {% assign startYear = content.startDate | split: '-' | slice: 0 | first %}
-              {% assign endMonth = content.endDate | split: '-' | slice: 1 | first %}
-              {% assign endYear = content.endDate | split: '-' | slice: 0 | first %}
-              {% case startMonth %}
-                {% when '01' %}{% assign startMonthName = 'JAN' %}
-                {% when '02' %}{% assign startMonthName = 'FEB' %}
-                {% when '03' %}{% assign startMonthName = 'MAR' %}
-                {% when '04' %}{% assign startMonthName = 'APR' %}
-                {% when '05' %}{% assign startMonthName = 'MAY' %}
-                {% when '06' %}{% assign startMonthName = 'JUN' %}
-                {% when '07' %}{% assign startMonthName = 'JUL' %}
-                {% when '08' %}{% assign startMonthName = 'AUG' %}
-                {% when '09' %}{% assign startMonthName = 'SEP' %}
-                {% when '10' %}{% assign startMonthName = 'OCT' %}
-                {% when '11' %}{% assign startMonthName = 'NOV' %}
-                {% when '12' %}{% assign startMonthName = 'DEC' %}
-              {% endcase %}
-              {% case endMonth %}
-                {% when '01' %}{% assign endMonthName = 'JAN' %}
-                {% when '02' %}{% assign endMonthName = 'FEB' %}
-                {% when '03' %}{% assign endMonthName = 'MAR' %}
-                {% when '04' %}{% assign endMonthName = 'APR' %}
-                {% when '05' %}{% assign endMonthName = 'MAY' %}
-                {% when '06' %}{% assign endMonthName = 'JUN' %}
-                {% when '07' %}{% assign endMonthName = 'JUL' %}
-                {% when '08' %}{% assign endMonthName = 'AUG' %}
-                {% when '09' %}{% assign endMonthName = 'SEP' %}
-                {% when '10' %}{% assign endMonthName = 'OCT' %}
-                {% when '11' %}{% assign endMonthName = 'NOV' %}
-                {% when '12' %}{% assign endMonthName = 'DEC' %}
-              {% endcase %}
-              <span class="font-weight-bold text-muted" style="font-size: 0.85rem; white-space: nowrap;">{{ startMonthName }} {{ startYear }} - {{ endMonthName }} {{ endYear }}</span>
-            {% endif %}
-          </div>
-          <div class="ml-3">
-            <span class="font-weight-normal">
-              <strong>Coursework:</strong>
-              <span class="text-muted">{{ content.courses | join: ', ' }}</span>
-            </span>
-          </div>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div>
+          <h6 class="title font-weight-bold mb-1">{{ content.studyType }} in {{ content.area }} - <span class="text-primary">{{ content.institution }}</span></h6>
+        </div>
+        <div class="text-right">
+          {% if content.startDate and content.startDate != '' %}
+            {% assign startMonth = content.startDate | split: '-' | slice: 1 | first %}
+            {% assign startYear = content.startDate | split: '-' | slice: 0 | first %}
+            {% assign endMonth = content.endDate | split: '-' | slice: 1 | first %}
+            {% assign endYear = content.endDate | split: '-' | slice: 0 | first %}
+            {% case startMonth %}
+              {% when '01' %}{% assign startMonthName = 'JAN' %}
+              {% when '02' %}{% assign startMonthName = 'FEB' %}
+              {% when '03' %}{% assign startMonthName = 'MAR' %}
+              {% when '04' %}{% assign startMonthName = 'APR' %}
+              {% when '05' %}{% assign startMonthName = 'MAY' %}
+              {% when '06' %}{% assign startMonthName = 'JUN' %}
+              {% when '07' %}{% assign startMonthName = 'JUL' %}
+              {% when '08' %}{% assign startMonthName = 'AUG' %}
+              {% when '09' %}{% assign startMonthName = 'SEP' %}
+              {% when '10' %}{% assign startMonthName = 'OCT' %}
+              {% when '11' %}{% assign startMonthName = 'NOV' %}
+              {% when '12' %}{% assign startMonthName = 'DEC' %}
+            {% endcase %}
+            {% case endMonth %}
+              {% when '01' %}{% assign endMonthName = 'JAN' %}
+              {% when '02' %}{% assign endMonthName = 'FEB' %}
+              {% when '03' %}{% assign endMonthName = 'MAR' %}
+              {% when '04' %}{% assign endMonthName = 'APR' %}
+              {% when '05' %}{% assign endMonthName = 'MAY' %}
+              {% when '06' %}{% assign endMonthName = 'JUN' %}
+              {% when '07' %}{% assign endMonthName = 'JUL' %}
+              {% when '08' %}{% assign endMonthName = 'AUG' %}
+              {% when '09' %}{% assign endMonthName = 'SEP' %}
+              {% when '10' %}{% assign endMonthName = 'OCT' %}
+              {% when '11' %}{% assign endMonthName = 'NOV' %}
+              {% when '12' %}{% assign endMonthName = 'DEC' %}
+            {% endcase %}
+            <span class="text-muted" style="font-size: 0.9rem">{{ startMonthName }} {{ startYear }} - {{ endMonthName }} {{ endYear }}</span>
+          {% endif %}
         </div>
       </div>
-    </div>
+      {% if content.courses and content.courses.size > 0 %}
+        <p class="text-muted font-italic mb-0" style="font-size: 0.9rem"><strong>Coursework:</strong> {{ content.courses | join: ', ' }}</p>
+      {% endif %}
+    </li>
   {% endfor %}
-</div>
+</ul>

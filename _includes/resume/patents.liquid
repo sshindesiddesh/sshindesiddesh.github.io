@@ -1,19 +1,17 @@
-<div class="card-text font-weight-light">
-  <ol class="mb-0">
-    {% assign patents = data[1] | sort: 'date' | reverse %}
-    {% for content in patents %}
-      <li class="mb-2">
-        <div class="d-flex justify-content-between align-items-start">
-          <div class="flex-grow-1">
-            <span class="font-weight-normal">{{ content.title }}</span>
-          </div>
-          <div class="text-right ml-3">
-            {% if content.date %}
-              <span class="text-muted" style="font-size: 0.9rem">({{ content.date }})</span>
-            {% endif %}
-          </div>
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% assign patents = data[1] | sort: 'date' | reverse %}
+  {% for content in patents %}
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+        <div class="flex-grow-1 pr-3">
+          <span class="font-weight-normal" style="font-size: 0.95rem; line-height: 1.4;">{{ content.title }}</span>
         </div>
-      </li>
-    {% endfor %}
-  </ol>
-</div>
+        <div class="text-right" style="flex-shrink: 0;">
+          {% if content.date %}
+            <span class="text-muted" style="font-size: 0.9rem">{{ content.date }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
