@@ -1,10 +1,10 @@
 ---
 layout: default
-permalink: /blog/
+permalink: /blogs/
 title: blog
 nav: true
 nav_order: 3
-# force cache clear - blog page fix
+# Changed permalink to /blogs/ to test if /blog/ URL has conflicts
 pagination:
   enabled: true
   collection: posts
