@@ -4,7 +4,7 @@ permalink: /blog/
 title: blog
 nav: true
 nav_order: 3
-# Force cache clear - blog page fix
+# force cache clear - blog page fix
 pagination:
   enabled: true
   collection: posts
