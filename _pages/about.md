@@ -21,7 +21,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -33,3 +33,52 @@ With over **6 years of experience** in software engineering, I've worked across 
 I hold a **Master's in Computer Science** from Stony Brook University, where I was part of the [File Systems and Storage Lab (FSL)](http://www.fsl.cs.stonybrook.edu/) under [Prof. Erez Zadok](http://www3.cs.stonybrook.edu/~ezk/). My technical interests span distributed systems, performance optimization, storage systems, and scalable architectures.
 
 When I'm not building systems, you can find me writing about technology on [Medium](https://medium.com/@sshindesiddesh), exploring the latest tech trends, or enjoying the outdoors through hiking and traveling.
+
+---
+
+<div class="text-center mt-4">
+  <p class="text-muted mb-3">Discover my educational journey and professional experience</p>
+  <a href="/experience/" class="btn btn-primary btn-lg discover-btn">
+    <i class="fa-solid fa-magnifying-glass me-2 zoom-icon"></i>Discover My Background
+  </a>
+</div>
+
+<style>
+.discover-btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discover-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.zoom-icon {
+  transition: all 0.3s ease;
+  animation: zoomPulse 2s ease-in-out infinite;
+}
+
+.discover-btn:hover .zoom-icon {
+  transform: scale(1.3) rotate(15deg);
+  animation-duration: 0.5s;
+}
+
+@keyframes zoomPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .discover-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+</style>
