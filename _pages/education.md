@@ -4,7 +4,7 @@ title: Education
 nav_title: education
 permalink: /education/
 description:
-nav: true
+nav: false
 nav_order: 1.5
 ---
 
