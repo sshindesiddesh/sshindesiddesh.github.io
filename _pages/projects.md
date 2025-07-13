@@ -9,15 +9,6 @@ nav_order: 4
 ---
 
 <div class="projects-showcase">
-  <!-- GitHub Contribution Heatmap -->
-  <div class="github-contributions-section mb-5">
-    <div class="text-center">
-      <a href="https://github.com/sshindesiddesh" rel="external nofollow noopener" target="_blank">
-        <img class="only-light w-100" alt="GitHub Contributions" src="https://github-readme-activity-graph.vercel.app/graph?username=sshindesiddesh&theme=github-compact&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph">
-        <img class="only-dark w-100" alt="GitHub Contributions" src="https://github-readme-activity-graph.vercel.app/graph?username=sshindesiddesh&theme=github-dark-dimmed&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph">
-      </a>
-    </div>
-  </div>
 
   <div class="projects-grid">
     <!-- SBUnix Operating System -->
@@ -189,6 +180,142 @@ nav_order: 4
         </div>
       </div>
     </div>
+
+    <!-- GenWal Wallpaper Generator -->
+    <div class="project-card mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h3 class="card-title mb-0">
+              <a href="https://github.com/sshindesiddesh/genwal" target="_blank" class="text-decoration-none">
+                <i class="fa-brands fa-github me-2"></i>GenWal
+              </a>
+            </h3>
+            <div class="tech-badges">
+              <span class="badge bg-warning">Python</span>
+              <span class="badge bg-info">Graphics</span>
+              <span class="badge bg-secondary">CLI</span>
+            </div>
+          </div>
+          <p class="card-text text-muted mb-3">
+            Automated wallpaper generator that creates beautiful, customizable desktop backgrounds
+            using algorithmic patterns, gradients, and geometric designs.
+          </p>
+          <div class="project-highlights mb-3">
+            <h6 class="text-primary">Key Features:</h6>
+            <ul class="list-unstyled small">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Algorithmic pattern generation</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Customizable color schemes</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Multiple output formats</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Command-line interface</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- JetsonCuda GPU Computing -->
+    <div class="project-card mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h3 class="card-title mb-0">
+              <a href="https://github.com/sshindesiddesh/JetsonCuda" target="_blank" class="text-decoration-none">
+                <i class="fa-brands fa-github me-2"></i>JetsonCuda
+              </a>
+            </h3>
+            <div class="tech-badges">
+              <span class="badge bg-danger">CUDA</span>
+              <span class="badge bg-primary">C++</span>
+              <span class="badge bg-success">GPU</span>
+            </div>
+          </div>
+          <p class="card-text text-muted mb-3">
+            High-performance GPU computing examples and optimizations for NVIDIA Jetson platforms,
+            demonstrating parallel processing techniques and CUDA programming.
+          </p>
+          <div class="project-highlights mb-3">
+            <h6 class="text-primary">Key Features:</h6>
+            <ul class="list-unstyled small">
+              <li><i class="fa-solid fa-check text-success me-2"></i>CUDA kernel optimization</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Parallel processing examples</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Jetson platform integration</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Performance benchmarking</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- External Merge Sort -->
+    <div class="project-card mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h3 class="card-title mb-0">
+              <a href="https://github.com/sshindesiddesh/ext_merge_sort" target="_blank" class="text-decoration-none">
+                <i class="fa-brands fa-github me-2"></i>External Merge Sort
+              </a>
+            </h3>
+            <div class="tech-badges">
+              <span class="badge bg-primary">C</span>
+              <span class="badge bg-secondary">Algorithms</span>
+              <span class="badge bg-info">Big Data</span>
+            </div>
+          </div>
+          <p class="card-text text-muted mb-3">
+            Efficient external merge sort implementation for handling large datasets that don't fit in memory,
+            with optimized disk I/O and memory management strategies.
+          </p>
+          <div class="project-highlights mb-3">
+            <h6 class="text-primary">Key Features:</h6>
+            <ul class="list-unstyled small">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Large dataset handling</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Optimized disk I/O</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Memory-efficient sorting</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Performance analysis</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Prolog Logic Programming -->
+    <div class="project-card mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h3 class="card-title mb-0">
+              <a href="https://github.com/sshindesiddesh/prolog" target="_blank" class="text-decoration-none">
+                <i class="fa-brands fa-github me-2"></i>Prolog Projects
+              </a>
+            </h3>
+            <div class="tech-badges">
+              <span class="badge bg-dark">Prolog</span>
+              <span class="badge bg-warning">Logic</span>
+              <span class="badge bg-info">AI</span>
+            </div>
+          </div>
+          <p class="card-text text-muted mb-3">
+            Collection of logic programming projects and AI algorithms implemented in Prolog,
+            demonstrating declarative programming and knowledge representation techniques.
+          </p>
+          <div class="project-highlights mb-3">
+            <h6 class="text-primary">Key Features:</h6>
+            <ul class="list-unstyled small">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Logic programming examples</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>AI algorithm implementations</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Knowledge representation</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Declarative problem solving</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Technology Stack Overview -->
@@ -203,6 +330,7 @@ nav_order: 4
               <span class="badge bg-primary m-1">C</span>
               <span class="badge bg-secondary m-1">Assembly</span>
               <span class="badge bg-dark m-1">Linux Kernel</span>
+              <span class="badge bg-info m-1">Algorithms</span>
             </div>
           </div>
         </div>
@@ -210,11 +338,12 @@ nav_order: 4
       <div class="col-md-3 mb-3">
         <div class="card text-center h-100">
           <div class="card-body">
-            <h5 class="card-title text-success">Computer Vision</h5>
+            <h5 class="card-title text-success">GPU Computing</h5>
             <div class="tech-list">
               <span class="badge bg-warning m-1">Python</span>
               <span class="badge bg-success m-1">OpenCV</span>
               <span class="badge bg-danger m-1">CUDA</span>
+              <span class="badge bg-primary m-1">C++</span>
             </div>
           </div>
         </div>
@@ -222,11 +351,12 @@ nav_order: 4
       <div class="col-md-3 mb-3">
         <div class="card text-center h-100">
           <div class="card-body">
-            <h5 class="card-title text-info">Web Development</h5>
+            <h5 class="card-title text-info">Web & Logic</h5>
             <div class="tech-list">
               <span class="badge bg-success m-1">JavaScript</span>
               <span class="badge bg-primary m-1">Node.js</span>
               <span class="badge bg-info m-1">WebSocket</span>
+              <span class="badge bg-dark m-1">Prolog</span>
             </div>
           </div>
         </div>
@@ -234,11 +364,12 @@ nav_order: 4
       <div class="col-md-3 mb-3">
         <div class="card text-center h-100">
           <div class="card-body">
-            <h5 class="card-title text-warning">Tools & Platforms</h5>
+            <h5 class="card-title text-warning">Tools & Graphics</h5>
             <div class="tech-list">
               <span class="badge bg-dark m-1">Git</span>
               <span class="badge bg-secondary m-1">Linux</span>
               <span class="badge bg-success m-1">NVIDIA Jetson</span>
+              <span class="badge bg-info m-1">Graphics</span>
             </div>
           </div>
         </div>
