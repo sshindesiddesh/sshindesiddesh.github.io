@@ -6,3 +6,6 @@ repo_description_lines_max: 2
 github_repos:
   - sshindesiddesh/SBUnix
   - sshindesiddesh/JetsonOpenCV
+  - sshindesiddesh/mafia_game
+  - sshindesiddesh/diceroll
+  - sshindesiddesh/ministrace
