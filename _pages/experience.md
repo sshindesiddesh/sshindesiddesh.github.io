@@ -4,7 +4,7 @@ title: Experience
 nav_title: experience
 permalink: /experience/
 description: Educational background and professional work experience in distributed systems and software engineering.
-nav: true
+nav: false
 nav_order: 2
 ---
 
